@@ -52,7 +52,7 @@ All params are optional.
 
 - `token` - the GitHub authorization token
 - `headers` - an object of headers to use by default for `User-Agent` and `Accept` (lower case keys also valid)
-- `method` - if set to `"PUT"`
+- `method` - if set to `"PUT"` and `body` is empty, `Content-Length` header will be set to zero
 - `body` - if truthy, content-length will not be changed on `PUT` requests
 
 If `headers` is passed, the returned headers object will be the same but with any defaults mixed in.
