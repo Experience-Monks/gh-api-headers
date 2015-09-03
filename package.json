@@ -1,6 +1,6 @@
 {
   "name": "gh-api-headers",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "provides default headers for GitHub API requests",
   "main": "index.js",
   "browser": {
