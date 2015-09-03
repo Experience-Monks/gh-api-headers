@@ -1,0 +1,46 @@
+{
+  "name": "gh-api-headers",
+  "version": "1.0.0",
+  "description": "provides default headers for GitHub API requests",
+  "main": "index.js",
+  "browser": {
+    "./user-agent.js": false
+  },
+  "license": "MIT",
+  "author": {
+    "name": "Matt DesLauriers",
+    "email": "dave.des@gmail.com",
+    "url": "https://github.com/mattdesl"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "browserify": "^11.0.1",
+    "faucet": "0.0.1",
+    "standard": "^5.1.1",
+    "tape": "^4.2.0"
+  },
+  "scripts": {
+    "test-node": "node test/node.js | faucet",
+    "test-browser": "browserify test/browser.js | node | faucet",
+    "test": "standard && npm run test-node && npm run test-browser"
+  },
+  "keywords": [
+    "github",
+    "api",
+    "gh",
+    "request",
+    "header",
+    "headers",
+    "user",
+    "accept",
+    "token"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Jam3/gh-api-headers.git"
+  },
+  "homepage": "https://github.com/Jam3/gh-api-headers",
+  "bugs": {
+    "url": "https://github.com/Jam3/gh-api-headers/issues"
+  }
+}
